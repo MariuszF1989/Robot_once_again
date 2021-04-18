@@ -27,4 +27,7 @@ test4
   ${mul}=  Convert To String  ${mul}
   should be equal  ${y}  ${mul}
 
+# update
+test5(TheNewest)
+  should be equal  ${y}  ${z}
 *** Keywords ***
