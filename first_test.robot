@@ -28,6 +28,13 @@ test4
   should be equal  ${y}  ${mul}
 
 # update
-test5(TheNewest)
+test5
   should be equal  ${y}  ${z}
+
+test6(TheNewest)
+  ${a}=  Convert To Integer  ${a}
+  ${b}=  Convert To Integer  ${b}
+  ${div}=  division  ${a}  ${b}
+  ${div}=  Convert To String  ${div}
+  should be equal  0.6  ${div}
 *** Keywords ***
