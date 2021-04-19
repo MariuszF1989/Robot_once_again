@@ -1,141 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0 (Python 3.8.3 on win32)" generated="20210419 09:22:33.932" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0 (Python 3.8.3 on win32)" generated="20210419 10:14:39.307" rpa="false" schemaversion="2">
 <suite id="s1" name="First test" source="C:\Python\robot_framework\First_test.robot">
 <test id="s1-t1" name="test1">
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${x}</arg>
 <arg>${y}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<msg timestamp="20210419 09:22:33.965" level="FAIL">6 != 15</msg>
-<status status="FAIL" starttime="20210419 09:22:33.964" endtime="20210419 09:22:33.965"/>
+<msg timestamp="20210419 10:14:39.347" level="FAIL">6 != 15</msg>
+<status status="FAIL" starttime="20210419 10:14:39.346" endtime="20210419 10:14:39.347"/>
 </kw>
-<status status="FAIL" starttime="20210419 09:22:33.964" endtime="20210419 09:22:33.965">6 != 15</status>
+<status status="FAIL" starttime="20210419 10:14:39.345" endtime="20210419 10:14:39.347">6 != 15</status>
 </test>
 <test id="s1-t2" name="test2">
 <kw name="Should Not Be Equal" library="BuiltIn">
 <arg>${x}</arg>
 <arg>${y}</arg>
 <doc>Fails if the given objects are equal.</doc>
-<status status="PASS" starttime="20210419 09:22:33.966" endtime="20210419 09:22:33.966"/>
+<status status="PASS" starttime="20210419 10:14:39.348" endtime="20210419 10:14:39.348"/>
 </kw>
-<status status="PASS" starttime="20210419 09:22:33.965" endtime="20210419 09:22:33.966"/>
+<status status="PASS" starttime="20210419 10:14:39.347" endtime="20210419 10:14:39.348"/>
 </test>
 <test id="s1-t3" name="test3">
 <kw name="Num" library="functions">
 <var>${num}</var>
-<msg timestamp="20210419 09:22:33.967" level="INFO">${num} = 12</msg>
-<status status="PASS" starttime="20210419 09:22:33.967" endtime="20210419 09:22:33.967"/>
+<msg timestamp="20210419 10:14:39.349" level="INFO">${num} = 12</msg>
+<status status="PASS" starttime="20210419 10:14:39.349" endtime="20210419 10:14:39.349"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${numstring}</var>
 <arg>${num}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20210419 09:22:33.967" level="INFO">${numstring} = 12</msg>
-<status status="PASS" starttime="20210419 09:22:33.967" endtime="20210419 09:22:33.967"/>
+<msg timestamp="20210419 10:14:39.349" level="INFO">${numstring} = 12</msg>
+<status status="PASS" starttime="20210419 10:14:39.349" endtime="20210419 10:14:39.349"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${numstring}</arg>
 <arg>${z}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20210419 09:22:33.968" endtime="20210419 09:22:33.968"/>
+<status status="PASS" starttime="20210419 10:14:39.349" endtime="20210419 10:14:39.350"/>
 </kw>
-<status status="PASS" starttime="20210419 09:22:33.967" endtime="20210419 09:22:33.968"/>
+<status status="PASS" starttime="20210419 10:14:39.348" endtime="20210419 10:14:39.350"/>
 </test>
 <test id="s1-t4" name="test4">
 <kw name="Convert To Integer" library="BuiltIn">
 <var>${a}</var>
 <arg>${a}</arg>
 <doc>Converts the given item to an integer number.</doc>
-<msg timestamp="20210419 09:22:33.969" level="INFO">${a} = 3</msg>
-<status status="PASS" starttime="20210419 09:22:33.969" endtime="20210419 09:22:33.969"/>
+<msg timestamp="20210419 10:14:39.351" level="INFO">${a} = 3</msg>
+<status status="PASS" starttime="20210419 10:14:39.350" endtime="20210419 10:14:39.351"/>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <var>${b}</var>
 <arg>${b}</arg>
 <doc>Converts the given item to an integer number.</doc>
-<msg timestamp="20210419 09:22:33.969" level="INFO">${b} = 5</msg>
-<status status="PASS" starttime="20210419 09:22:33.969" endtime="20210419 09:22:33.969"/>
+<msg timestamp="20210419 10:14:39.351" level="INFO">${b} = 5</msg>
+<status status="PASS" starttime="20210419 10:14:39.351" endtime="20210419 10:14:39.351"/>
 </kw>
 <kw name="Multiplication" library="functions">
 <var>${mul}</var>
 <arg>${a}</arg>
 <arg>${b}</arg>
-<msg timestamp="20210419 09:22:33.970" level="INFO">${mul} = 15</msg>
-<status status="PASS" starttime="20210419 09:22:33.969" endtime="20210419 09:22:33.970"/>
+<msg timestamp="20210419 10:14:39.352" level="INFO">${mul} = 15</msg>
+<status status="PASS" starttime="20210419 10:14:39.351" endtime="20210419 10:14:39.352"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${mul}</var>
 <arg>${mul}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20210419 09:22:33.970" level="INFO">${mul} = 15</msg>
-<status status="PASS" starttime="20210419 09:22:33.970" endtime="20210419 09:22:33.970"/>
+<msg timestamp="20210419 10:14:39.352" level="INFO">${mul} = 15</msg>
+<status status="PASS" starttime="20210419 10:14:39.352" endtime="20210419 10:14:39.352"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${y}</arg>
 <arg>${mul}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20210419 09:22:33.970" endtime="20210419 09:22:33.971"/>
+<status status="PASS" starttime="20210419 10:14:39.352" endtime="20210419 10:14:39.352"/>
 </kw>
-<status status="PASS" starttime="20210419 09:22:33.968" endtime="20210419 09:22:33.971"/>
+<status status="PASS" starttime="20210419 10:14:39.350" endtime="20210419 10:14:39.353"/>
 </test>
 <test id="s1-t5" name="test5">
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${y}</arg>
 <arg>${z}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<msg timestamp="20210419 09:22:33.972" level="FAIL">15 != 12</msg>
-<status status="FAIL" starttime="20210419 09:22:33.971" endtime="20210419 09:22:33.972"/>
+<msg timestamp="20210419 10:14:39.354" level="FAIL">15 != 12</msg>
+<status status="FAIL" starttime="20210419 10:14:39.353" endtime="20210419 10:14:39.354"/>
 </kw>
-<status status="FAIL" starttime="20210419 09:22:33.971" endtime="20210419 09:22:33.972">15 != 12</status>
+<status status="FAIL" starttime="20210419 10:14:39.353" endtime="20210419 10:14:39.354">15 != 12</status>
 </test>
-<test id="s1-t6" name="test6(TheNewest)">
+<test id="s1-t6" name="test6">
 <kw name="Convert To Integer" library="BuiltIn">
 <var>${a}</var>
 <arg>${a}</arg>
 <doc>Converts the given item to an integer number.</doc>
-<msg timestamp="20210419 09:22:33.973" level="INFO">${a} = 3</msg>
-<status status="PASS" starttime="20210419 09:22:33.973" endtime="20210419 09:22:33.973"/>
+<msg timestamp="20210419 10:14:39.355" level="INFO">${a} = 3</msg>
+<status status="PASS" starttime="20210419 10:14:39.354" endtime="20210419 10:14:39.355"/>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <var>${b}</var>
 <arg>${b}</arg>
 <doc>Converts the given item to an integer number.</doc>
-<msg timestamp="20210419 09:22:33.973" level="INFO">${b} = 5</msg>
-<status status="PASS" starttime="20210419 09:22:33.973" endtime="20210419 09:22:33.973"/>
+<msg timestamp="20210419 10:14:39.355" level="INFO">${b} = 5</msg>
+<status status="PASS" starttime="20210419 10:14:39.355" endtime="20210419 10:14:39.355"/>
 </kw>
 <kw name="Division" library="functions">
 <var>${div}</var>
 <arg>${a}</arg>
 <arg>${b}</arg>
-<msg timestamp="20210419 09:22:33.974" level="INFO">${div} = 0.6</msg>
-<status status="PASS" starttime="20210419 09:22:33.973" endtime="20210419 09:22:33.974"/>
+<msg timestamp="20210419 10:14:39.356" level="INFO">${div} = 0.6</msg>
+<status status="PASS" starttime="20210419 10:14:39.355" endtime="20210419 10:14:39.356"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${div}</var>
 <arg>${div}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20210419 09:22:33.975" level="INFO">${div} = 0.6</msg>
-<status status="PASS" starttime="20210419 09:22:33.974" endtime="20210419 09:22:33.975"/>
+<msg timestamp="20210419 10:14:39.356" level="INFO">${div} = 0.6</msg>
+<status status="PASS" starttime="20210419 10:14:39.356" endtime="20210419 10:14:39.356"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>0.6</arg>
 <arg>${div}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20210419 09:22:33.975" endtime="20210419 09:22:33.975"/>
+<status status="PASS" starttime="20210419 10:14:39.356" endtime="20210419 10:14:39.356"/>
 </kw>
-<status status="PASS" starttime="20210419 09:22:33.972" endtime="20210419 09:22:33.975"/>
+<status status="PASS" starttime="20210419 10:14:39.354" endtime="20210419 10:14:39.357"/>
+</test>
+<test id="s1-t7" name="test7(TheNewest)">
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${a}</arg>
+<arg>${b}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20210419 10:14:39.358" level="FAIL">3 != 5</msg>
+<status status="FAIL" starttime="20210419 10:14:39.357" endtime="20210419 10:14:39.358"/>
+</kw>
+<status status="FAIL" starttime="20210419 10:14:39.357" endtime="20210419 10:14:39.358">3 != 5</status>
 </test>
 <doc>Simple test</doc>
-<status status="FAIL" starttime="20210419 09:22:33.934" endtime="20210419 09:22:33.976"/>
+<status status="FAIL" starttime="20210419 10:14:39.309" endtime="20210419 10:14:39.359"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="2" skip="0">All Tests</stat>
+<stat pass="4" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="4" fail="2" skip="0" id="s1" name="First test">First test</stat>
+<stat pass="4" fail="3" skip="0" id="s1" name="First test">First test</stat>
 </suite>
 </statistics>
 <errors>

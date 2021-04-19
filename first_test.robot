@@ -31,10 +31,13 @@ test4
 test5
   should be equal  ${y}  ${z}
 
-test6(TheNewest)
+test6
   ${a}=  Convert To Integer  ${a}
   ${b}=  Convert To Integer  ${b}
   ${div}=  division  ${a}  ${b}
   ${div}=  Convert To String  ${div}
   should be equal  0.6  ${div}
+
+test7(TheNewest)
+  should be equal  ${a}  ${b}
 *** Keywords ***
